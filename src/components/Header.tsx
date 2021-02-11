@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 const Header = () => {
   const location = useLocation();
   return (
-    <div className="tabs">
+    <div className="tabs is-size-7">
       <ul>
         <li className={`${location.pathname === "/" ? "is-active" : ""}`}>
           <Link to="/">Core Redux</Link>

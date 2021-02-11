@@ -1,14 +1,25 @@
 import * as React from "react";
-import CatGameContainer from "../containers/CatGameContainer";
-import UsersContainer from "../containers/UsersContainer";
-const ToolKitAndRQ = () => {
+import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
+import UsersListRQ from "../components/UsersListRQ";
+import CatGameRQ from "../components/CatGameRQ";
+import store from "../storeRQ";
+import withReduxStore from "../hoc/withReduxStore";
+
+const ReactQuery = () => {
+  const queryClientRef = React.useRef();
+  if (!queryClientRef.current) {
+    queryClientRef.current = new QueryClient();
+  }
   return (
-    <>
-      <p className="notification is-success is-light">Toolkit & React Query</p>
-      <UsersContainer />
-      <CatGameContainer />
-    </>
+    <QueryClientProvider client={queryClientRef.current}>
+      <p className="notification is-warning is-light">Redux Toolkit</p>
+      <UsersListRQ />
+      <hr />
+      <CatGameRQ />
+      <ReactQueryDevtools />
+    </QueryClientProvider>
   );
 };
 
-export default ToolKitAndRQ;
+export default withReduxStore(ReactQuery, store);
