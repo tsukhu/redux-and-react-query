@@ -1,14 +1,25 @@
-import React from "react";
-import VendingMachine from "./containers/VendingMachine";
+import * as React from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
+import Header from "./components/Header";
+import CoreRedux from "./pages/CoreRedux";
+import ReduxToolkit from "./pages/ReduxToolkit";
+import ToolKitAndRQ from "./pages/ToolKitAndRQ";
+import NoMatch from "./pages/NoMatch";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="section">
-      <div className="container">
-        <VendingMachine />
+    <div className="container is-fluid">
+      <Header />
+      <div className="section">
+        <Switch>
+          <Route path="/" exact component={CoreRedux} />
+          <Route path="/toolkit" exact component={ReduxToolkit} />
+          <Route path="/toolkit-rq" exact component={ToolKitAndRQ} />
+          <Route component={NoMatch} />
+        </Switch>
       </div>
     </div>
   );
-}
+};
 
 export default App;

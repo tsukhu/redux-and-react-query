@@ -1,7 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
+import * as React from "react";
 
-function Gif({ imageUrl }) {
+interface GifProps {
+  imageUrl: string;
+}
+
+const Gif: React.FC<GifProps> = ({ imageUrl }) => {
   return (
     <figure>
       <img src={imageUrl} alt="" />
@@ -10,10 +13,6 @@ function Gif({ imageUrl }) {
       </figcaption>
     </figure>
   );
-};
-
-Gif.propTypes = {
-  imageUrl: PropTypes.string.isRequired
 };
 
 export default Gif;
