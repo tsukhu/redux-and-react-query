@@ -2,6 +2,21 @@ import React from "react";
 import PropTypes from "prop-types";
 import Gif from "./Gif";
 
+
+function renderGif({ imageUrl, loading, error }) {
+  if (error) {
+    return <p className="notification is-danger">Error!!</p>;
+  }
+
+  if (loading) {
+    return <p className="notification is-info">Loading...</p>;
+  }
+
+  return imageUrl
+    ? <Gif imageUrl={imageUrl} />
+    : <p className="notification">Welcome!</p>;
+};
+
 function VendingMachine({ imageUrl, loading, error, play, clear }) {
   return (
     <div>
@@ -22,19 +37,7 @@ function VendingMachine({ imageUrl, loading, error, play, clear }) {
   );
 }
 
-function renderGif({ imageUrl, loading, error }) {
-  if (error) {
-    return <p className="notification is-danger">Error!!</p>;
-  }
 
-  if (loading) {
-    return <p className="notification is-info">Loading...</p>;
-  }
-
-  return imageUrl
-    ? <Gif imageUrl={imageUrl} />
-    : <p className="notification">Welcome!</p>;
-};
 
 VendingMachine.propTypes = {
   imageUrl: PropTypes.string.isRequired,
