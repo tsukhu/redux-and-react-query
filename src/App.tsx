@@ -1,11 +1,14 @@
 import * as React from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import CoreRedux from "./pages/CoreRedux";
 import ReduxToolkit from "./pages/ReduxToolkit";
 import ToolKitAndRQ from "./pages/ToolKitAndRQ";
 import NoMatch from "./pages/NoMatch";
-
+ 
+/**
+ * Main App
+ */
 const App: React.FC = () => {
   return (
     <div className="container is-fluid">

@@ -1,14 +1,18 @@
 import * as React from "react";
-import CatGameContainer from "../containers/CatGameContainer";
-import UsersContainer from "../containers/UsersContainer";
-const CoreReduxToolkit = () => {
+import UsersListTK from "../components/UsersListTK";
+import CatGameTK from "../components/CatGameTK";
+import store from "../storeTK";
+import withReduxStore from "../hoc/withReduxStore";
+
+const ReduxToolkit = () => {
   return (
     <>
       <p className="notification is-warning is-light">Redux Toolkit</p>
-      <UsersContainer />
-      <CatGameContainer />
+      <UsersListTK />
+      <hr />
+      <CatGameTK />
     </>
   );
 };
 
-export default CoreReduxToolkit;
+export default withReduxStore(ReduxToolkit, store);

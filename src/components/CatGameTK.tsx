@@ -2,11 +2,11 @@ import * as React from "react";
 import Gif from "./Gif";
 import { useSelector, useDispatch } from "react-redux";
 import {
-  fetch,
   clear,
   selectError,
   selectLoading,
-  selectGif
+  selectGif,
+  fetchGifAsync
 } from "../storeTK/features/gif/reducers";
 
 function renderGif({ imageUrl, loading, error }) {
@@ -38,7 +38,7 @@ const CatGameTK: React.FC<any> = () => {
       <div className="buttons">
         <button
           className="button is-primary is-rounded"
-          onClick={() => dispatch(fetch())}
+          onClick={() => dispatch(fetchGifAsync())}
         >
           Play
         </button>
