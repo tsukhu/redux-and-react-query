@@ -5,8 +5,9 @@ Created with CodeSandbox
 - This project showcases two redux examples that also use redux saga for async API (Core Redux)
 
 - The same examples are reimplemented using different techniques
-  1. Redux Toolkit instead of Pure Redux
-  2. Redux Toolkit with React Query
+  1. Pure Redux + Redux Saga
+  2. Redux Toolkit instead of Pure Redux (with Redux Saga)
+  3. Redux Toolkit with React Query (without Redux Saga)
   3. Pure React Query
 
 ## Findings
