@@ -21,6 +21,9 @@ const Header = () => {
         >
           <Link to="/toolkit-rq">Toolkit & React Query</Link>
         </li>
+        <li className={`${location.pathname === "/rq" ? "is-active" : ""}`}>
+          <Link to="/rq">React Query Only</Link>
+        </li>
       </ul>
     </div>
   );
