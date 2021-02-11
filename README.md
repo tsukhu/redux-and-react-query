@@ -21,8 +21,9 @@ Created with CodeSandbox
 
 ## Lines of Code Differences
 
-|------|-----|-----|
-|Technique|LOC|% Savings|
+
+| Technique | LOC | % Savings |
+|-----------|-----|-----------|
 |Pure Redux| 339 | |
 |Redux Toolkit| 276| 18|
 |React Query with Redux Toolkit| 212 | 46|
