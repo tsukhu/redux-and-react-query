@@ -42,8 +42,8 @@ Created with CodeSandbox
 |-----------|-----|-----------|
 |Pure Redux| 339 | |
 |Redux Toolkit| 276| 18|
-|React Query with Redux Toolkit| 212 | 46|
-|Only React Query| 122| 102|
+|React Query with Redux Toolkit| 212 | 37|
+|Only React Query| 122| 64|
 |Todo (Pure Redux)| 437 | |
 |Todo (Redux Toolkit)| 306 | 29|
 
