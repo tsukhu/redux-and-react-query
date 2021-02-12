@@ -3,7 +3,7 @@ import Gif from "./Gif";
 import { useQuery } from "react-query";
 import gifApi from "../api/gif";
 
-function renderGif({ data, isFetching, error }) {
+function renderGif({ data, isFetching, error }: {data: {url: string}, isFetching: boolean, error: any}) {
   if (error) {
     return <p className="notification is-danger">Error!!</p>;
   }

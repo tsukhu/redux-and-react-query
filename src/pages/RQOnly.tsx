@@ -5,7 +5,7 @@ import UsersListOnlyRQ from "../components/UsersListOnlyRQ";
 import CatGameOnlyRQ from "../components/CatGameOnlyRQ";
 
 const ReactQueryOnly = () => {
-  const queryClientRef = React.useRef();
+  const queryClientRef: any = React.useRef();
   if (!queryClientRef.current) {
     queryClientRef.current = new QueryClient();
   }

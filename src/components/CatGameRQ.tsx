@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { clear, selectGif, setGif } from "../storeRQ/features/gif/reducers";
 import gifApi from "../api/gif";
 
-function renderGif({ imageUrl, isFetching, error }) {
+function renderGif({ imageUrl, isFetching, error }: {imageUrl: string, isFetching: boolean, error: any}) {
   if (error) {
     return <p className="notification is-danger">Error!!</p>;
   }

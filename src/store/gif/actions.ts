@@ -13,11 +13,11 @@ export const gifActions = {
     return { type: GIF_FETCH_START };
   },
 
-  successFetch(payload) {
+  successFetch(payload: any) {
     return { type: GIF_FETCH_SUCCEED, payload };
   },
 
-  failFetch(payload) {
+  failFetch(payload: any) {
     return { type: GIF_FETCH_FAILED, payload };
   },
 

@@ -7,7 +7,7 @@ import store from "../storeRQ";
 import withReduxStore from "../hoc/withReduxStore";
 
 const ReactQuery = () => {
-  const queryClientRef = React.useRef();
+  const queryClientRef: any = React.useRef();
   if (!queryClientRef.current) {
     queryClientRef.current = new QueryClient();
   }

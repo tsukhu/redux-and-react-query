@@ -34,7 +34,7 @@ const UsersListRQ: React.FC<any> = () => {
           </thead>
           <tbody>
             {users &&
-              users.map(({ id, name }) => (
+              users.map(({ id, name }: {id: any, name: string}) => (
                 <tr key={id}>
                   <td>{name}</td>
                 </tr>

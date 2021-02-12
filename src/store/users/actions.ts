@@ -13,11 +13,11 @@ export const usersActions = {
     return { type: USERS_FETCH_START };
   },
 
-  successFetch(payload) {
+  successFetch(payload: any) {
     return { type: USERS_FETCH_SUCCEED, payload };
   },
 
-  failFetch(payload) {
+  failFetch(payload: any) {
     return { type: USERS_FETCH_FAILED, payload };
   },
 

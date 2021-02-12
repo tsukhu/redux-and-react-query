@@ -11,7 +11,7 @@ const gifInitialState = {
   error: false
 };
 
-export const gif = (state = gifInitialState, action) => {
+export const gif = (state = gifInitialState, action: any) => {
   switch (action.type) {
     case GIF_FETCH_START:
       return { url: "", loading: true };

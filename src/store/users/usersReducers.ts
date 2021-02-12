@@ -11,7 +11,7 @@ const usersInitialState = {
   error: false
 };
 
-export const users = (state = usersInitialState, action) => {
+export const users = (state = usersInitialState, action: any) => {
   switch (action.type) {
     case USERS_FETCH_START:
       return { users: [], loading: true };

@@ -9,7 +9,7 @@ import {
   fetchGifAsync
 } from "../storeTK/features/gif/reducers";
 
-function renderGif({ imageUrl, loading, error }) {
+function renderGif({ imageUrl, loading, error }: {imageUrl: string, loading: boolean, error: any}) {
   if (error) {
     return <p className="notification is-danger">Error!!</p>;
   }

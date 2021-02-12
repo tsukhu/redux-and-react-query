@@ -1,7 +1,7 @@
 import * as React from "react";
 import Gif from "./Gif";
 
-function renderGif({ imageUrl, loading, error }) {
+function renderGif({ imageUrl, loading, error } : { imageUrl: string, loading: boolean, error: boolean}) {
   if (error) {
     return <p className="notification is-danger">Error!!</p>;
   }
