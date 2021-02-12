@@ -38,13 +38,15 @@ Created with CodeSandbox
 
 ## Lines of Code Differences
 
-
 | Technique | LOC | % Savings |
 |-----------|-----|-----------|
 |Pure Redux| 339 | |
 |Redux Toolkit| 276| 18|
 |React Query with Redux Toolkit| 212 | 46|
 |Only React Query| 122| 102|
+|Todo (Pure Redux)| 437 | |
+|Todo (Redux Toolkit)| 306 | 29|
+
 
 ## Credits
 
