@@ -8,7 +8,8 @@ Created with CodeSandbox
   1. Pure Redux + Redux Saga
   2. Redux Toolkit instead of Pure Redux (with Redux Saga)
   3. Redux Toolkit with React Query (without Redux Saga)
-  3. Pure React Query
+  4. Pure React Query
+  5. Redux and Redux Toolkit complex state management comparison (Todo App)
 
 ## Code Structure
   - **pages**: Page Routes for the app
@@ -44,3 +45,7 @@ Created with CodeSandbox
 |Redux Toolkit| 276| 18|
 |React Query with Redux Toolkit| 212 | 46|
 |Only React Query| 122| 102|
+
+## Credits
+
+Todo app is an adaption from the [redux-toolkit-comparison](https://github.com/angle943/redux-toolkit-comparison) project.

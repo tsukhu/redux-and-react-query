@@ -13,7 +13,7 @@ const ReactQuery = () => {
   }
   return (
     <QueryClientProvider client={queryClientRef.current}>
-      <p className="notification is-warning is-light">Redux Toolkit</p>
+      <p className="notification is-link is-light">Redux Toolkit</p>
       <UsersList />
       <hr />
       <CatGame />
