@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
-import { usersActions } from "../store/users/actions";
-import UsersList from "../components/UsersList";
+import { usersActions } from "../stores/coreRedux/users/actions";
+import UsersList from "../components/coreRedux/UsersList";
 
 const mapStateToProps = ({ users }: any) => ({
   users: users.users,

@@ -1,16 +1,16 @@
 import * as React from "react";
-import UsersListTK from "../components/UsersListTK";
-import CatGameTK from "../components/CatGameTK";
-import store from "../storeTK";
+import UsersList from "../components/reduxToolkit/UsersList";
+import CatGame from "../components/reduxToolkit/CatGame";
+import store from "../stores/reduxToolkit";
 import withReduxStore from "../hoc/withReduxStore";
 
 const ReduxToolkit = () => {
   return (
     <>
       <p className="notification is-warning is-light">Redux Toolkit</p>
-      <UsersListTK />
+      <UsersList />
       <hr />
-      <CatGameTK />
+      <CatGame />
     </>
   );
 };

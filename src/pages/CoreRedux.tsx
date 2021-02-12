@@ -1,7 +1,7 @@
 import * as React from "react";
 import CatGameContainer from "../containers/CatGameContainer";
 import UsersContainer from "../containers/UsersContainer";
-import store from "../store";
+import store from "../stores/coreRedux";
 import withReduxStore from "../hoc/withReduxStore";
 
 const CoreRedux = () => {

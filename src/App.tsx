@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Route, Switch } from "react-router-dom";
-import Header from "./components/Header";
+import Header from "./components/common/Header";
 import CoreRedux from "./pages/CoreRedux";
 import ReduxToolkit from "./pages/ReduxToolkit";
 import ToolKitAndRQ from "./pages/ToolKitAndRQ";
