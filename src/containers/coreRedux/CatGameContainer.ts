@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
-import { gifActions } from "../stores/coreRedux/gif/actions";
-import CatGame from "../components/coreRedux/CatGame";
+import { gifActions } from "../../stores/coreRedux/gif/actions";
+import CatGame from "../../components/coreRedux/CatGame";
 
 const mapStateToProps = ({ gif }: { gif: any}) => ({
   imageUrl: gif.url,
