@@ -32,7 +32,7 @@ Created with CodeSandbox
 
 1. `Redux Toolkit` helps to reduce the boilerplate code and make the code more effecient with OOTB `immer` and `reselect` making the code cleaner and simple to understand
 
-2. By using React Query adds additional benefit of further reducing the code as well as bringing the all the features of `react-query`. Also we can get rid of all our `redux-saga` related code
+2. By using React Query adds additional benefit of further reducing the code as well as bringing the all the features of `react-query`. Also we can get rid of all our `redux-saga` related code. There are advanced features from `react-query` like `pre-fetching` ,`depended queries` , `parrallel queries` , `background fetching indicators` that can also be leveraged for more advanced use cases.
 
 3. The amount of global state maintaned can be further reduces with `Frontend Server State` maintained with `react-query` , making the overall code more efficient.
 
