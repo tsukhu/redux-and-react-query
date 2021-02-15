@@ -26,6 +26,32 @@ Created with CodeSandbox
   - `toolkitWithRQ` : Redux as the global store with `react-query` for handling the FE server state
   - `onlyRQ` : All state managed within the components with server state handled with `react-query`
 
+## Testing
+
+  - Focus is on testing the application and features rather than the implementation details.
+  - This is where the `testing-library` comes in and helped achieve this.
+  - Also as Kent C Dodds mentions in his [blog](https://kentcdodds.com/blog/write-tests) where the focus should be more on the integration level tests where we get the most confidence on the application , rather than focusing on areas which are known to work (like action creators or low level implementation of the state management). Test these at the application level.
+  - To compliment this also adding in the project is `msw` or Mock Service Worker [https://mswjs.io/](https://mswjs.io/) , so that we mock the APIs at the network level rather than changing the internal implemention of client API libraries. This will ensure the test and the actual application code are being tested under the same configuration and code without any extra testing intercepts and the client API level.
+  
+
+## Setup
+
+```
+yarn
+```
+
+## Run the App
+
+```
+yarn start
+```
+
+## Run the tests
+
+```
+yarn test
+```
+
 ## Findings
 
 - While this is a small subset , here are the findings
