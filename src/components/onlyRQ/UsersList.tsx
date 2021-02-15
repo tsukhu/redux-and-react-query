@@ -22,9 +22,9 @@ const UsersListOnlyRQ: React.FC<any> = () => {
           </thead>
           <tbody>
             {data &&
-              data.map(({ id, name }: { id: any, name: string}) => (
+              data.map(({ id, name }: { id: any; name: string }) => (
                 <tr key={id}>
-                  <td>{name}</td>
+                  <td data-testid={id}>{name}</td>
                 </tr>
               ))}
           </tbody>

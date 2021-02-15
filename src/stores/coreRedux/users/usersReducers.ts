@@ -5,7 +5,7 @@ import {
   USERS_CLEAR
 } from "./actions";
 
-const usersInitialState = {
+export const usersInitialState = {
   users: [],
   loading: false,
   error: false

@@ -15,7 +15,7 @@ const UsersList: React.FC<UsersListProps> = ({
 }) => {
   React.useEffect(() => {
     load();
-  }, [load]);
+  }, []);
   return (
     <>
       <section className="section">
@@ -34,7 +34,7 @@ const UsersList: React.FC<UsersListProps> = ({
             {users &&
               users.map(({ id, name }) => (
                 <tr key={id}>
-                  <td>{name}</td>
+                  <td data-testid={id}>{name}</td>
                 </tr>
               ))}
           </tbody>

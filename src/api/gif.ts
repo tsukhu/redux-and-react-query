@@ -1,7 +1,5 @@
-const API_URL = 'https://ruddy-mail.glitch.me/api/gacha';
-
 export default {
   random() {
-    return fetch(API_URL).then(response => response.json());
+    return fetch(`${process.env.REACT_APP_GIF_API_URL}`).then(response => response.json());
   }
 }

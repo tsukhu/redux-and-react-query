@@ -7,7 +7,6 @@ function* fetchUsers() {
 
   try {
     const response = yield call(getUsers);
-    console.log(response);
     yield put(fetchSuccess(response));
   } catch (err) {
     yield put(fetchFailure(err));

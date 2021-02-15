@@ -6,7 +6,7 @@ interface GifProps {
 
 const Gif: React.FC<GifProps> = ({ imageUrl }) => {
   return (
-    <figure>
+    <figure data-testid="cat-game">
       <img src={imageUrl} alt="" />
       <figcaption>
         GIFs by <a href="https://giphy.com/">GIPHY</a>

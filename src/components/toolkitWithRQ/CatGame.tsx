@@ -36,7 +36,6 @@ const CatGameRQ: React.FC<any> = () => {
 
   React.useEffect(() => {
     if (data) {
-      console.log(data);
       dispatch(setGif(data.url));
       setPlay(false);
     }
