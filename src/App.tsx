@@ -4,6 +4,7 @@ import Header from "./components/common/Header";
 import CoreRedux from "./pages/CoreRedux";
 import ReduxToolkit from "./pages/ReduxToolkit";
 import ToolKitAndRQ from "./pages/ToolKitAndRQ";
+import ToolKitAndRTKQ from "./pages/ToolKitAndRTKQ";
 import ReduxTodo from "./pages/ReduxTodo";
 import ToolkitTodo from "./pages/ToolkitTodo";
 import RQOnly from "./pages/RQOnly";
@@ -24,6 +25,7 @@ const App: React.FC = () => {
           <Route path="/rq" exact component={RQOnly} />
           <Route path="/redux-todo" exact component={ReduxTodo} />
           <Route path="/toolkit-todo" exact component={ToolkitTodo} />
+          <Route path="/rtkq" exact component={ToolKitAndRTKQ} />
           <Route component={NoMatch} />
         </Switch>
       </div>

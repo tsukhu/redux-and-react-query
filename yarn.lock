@@ -1519,6 +1519,14 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
+"@rtk-incubator/rtk-query@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@rtk-incubator/rtk-query/-/rtk-query-0.2.0.tgz#ec7cfb90e44268eb70ac8df6a7eb7208c315fed1"
+  integrity sha512-XuxYLHk7LS65I0gwXITS8B2MMzL2qOobr6Kj7TGLQcjHktKlL2JZ1Y871D9ikBHvTwKqpROPOXlBcL035XO9sg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    immer ">=8.0.0"
+
 "@sinonjs/commons@^1.7.0":
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/@sinonjs/commons/-/commons-1.8.2.tgz#858f5c4b48d80778fde4b9d541f27edc0d56488b"
@@ -5829,7 +5837,7 @@ immer@7.0.9:
   resolved "https://registry.yarnpkg.com/immer/-/immer-7.0.9.tgz#28e7552c21d39dd76feccd2b800b7bc86ee4a62e"
   integrity sha512-Vs/gxoM4DqNAYR7pugIxi0Xc8XAun/uy7AQu4fLLqaTBHxjOP9pJ266Q9MWA/ly4z6rAFZbvViOtihxUZ7O28A==
 
-immer@^8.0.0:
+immer@>=8.0.0, immer@^8.0.0:
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/immer/-/immer-8.0.1.tgz#9c73db683e2b3975c424fb0572af5889877ae656"
   integrity sha512-aqXhGP7//Gui2+UrEtvxZxSquQVXTpZ7KDxfCcKAF3Vysvw0CViVaW9RZ1j1xlIYqaaaipBoqdqeibkc18PNvA==

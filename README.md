@@ -8,8 +8,10 @@ Created with CodeSandbox
   1. Pure Redux + Redux Saga
   2. Redux Toolkit instead of Pure Redux (with Redux Saga)
   3. Redux Toolkit with React Query (without Redux Saga)
-  4. Pure React Query
-  5. Redux and Redux Toolkit complex state management comparison (Todo App)
+  4. Redux Toolkit with experimental RTK Query (without Redux Sage)
+  5. Pure React Query
+  6. Redux and Redux Toolkit complex state management comparison (Todo App)
+  
 
 ## Code Structure
   - **pages**: Page Routes for the app
@@ -62,6 +64,8 @@ yarn test
 
 3. The amount of global state maintaned can be further reduces with `Frontend Server State` maintained with `react-query` , making the overall code more efficient.
 
+4. RTK Query once integrated (and a product release is available) with RTK is likely to be become a defacto standard for async , `Frontend Server State` if redux is being as part of the application.
+
 ## Lines of Code Differences
 
 | Technique | LOC | % Savings |
@@ -69,6 +73,7 @@ yarn test
 |Pure Redux| 339 | |
 |Redux Toolkit| 276| 18|
 |React Query with Redux Toolkit| 212 | 37|
+|Redux Toolkit with RTK Query| 231 | 31|
 |Only React Query| 122| 64|
 |Todo (Pure Redux)| 437 | |
 |Todo (Redux Toolkit)| 306 | 29|
