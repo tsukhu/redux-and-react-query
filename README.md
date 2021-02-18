@@ -26,6 +26,7 @@ Created with CodeSandbox
   - `coreRedux` : Traditional Redux Code + Saga
   - `reduxtToolkit` : Redux Toolkit Based Store + Saga
   - `toolkitWithRQ` : Redux as the global store with `react-query` for handling the FE server state
+  - `toolkitWithRTKQ` : Redux as the global store with `Redux Toolkit Query` for handling the FE server state
   - `onlyRQ` : All state managed within the components with server state handled with `react-query`
 
 ## Testing
